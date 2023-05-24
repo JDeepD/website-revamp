@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  height: fit-content;
+  padding: 0.4rem 1rem;
+  border-bottom: 4px solid var(--color-raisin-black);
+  background-color: var(--primary-yellow-1);
+  font-family: var(--primary-text-font-1);
+
+  .hambtn {
+    width: fit-content;
+    height: fit-content;
+
+    .hamburger {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin-bottom: 2px;
+      position: relative;
+      background: var(--color-nyaza);
+      border: 2px solid var(--color-raisin-black);
+      z-index: 1;
+    }
+    .menu {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    .menuopen{
+      transform: none;
+    }
+  }
+}
